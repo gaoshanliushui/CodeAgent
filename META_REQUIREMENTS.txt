@@ -1,0 +1,4 @@
+# Project Requirements
+- MetaGPT framework (pip install metagpt)
+- Python 3.8+
+- Additional dependencies for enhanced functionality

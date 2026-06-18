@@ -1,0 +1,49 @@
+{
+    "system": {
+        "name": "Multi-Agent Software Development System",
+        "version": "1.0.0",
+        "description": "Automated software development using multi-agent collaboration"
+    },
+    "agents": {
+        "product_manager": {
+            "enabled": true,
+            "role": "Product Manager"
+        },
+        "architect": {
+            "enabled": true,
+            "role": "System Architect"
+        },
+        "developer": {
+            "enabled": true,
+            "role": "Software Developer"
+        },
+        "tester": {
+            "enabled": true,
+            "role": "QA Engineer"
+        },
+        "project_manager": {
+            "enabled": true,
+            "role": "Project Manager"
+        }
+    },
+    "knowledge_base": {
+        "type": "rag",
+        "enabled": true,
+        "provider": "faiss"
+    },
+    "deployment": {
+        "private_deploy": true,
+        "supported_models": ["openai", "qwen", "llama3", "chatglm"],
+        "docker_enabled": true
+    },
+    "workflow": {
+        "steps": [
+            "PRD Creation",
+            "Architecture Design",
+            "Implementation",
+            "Testing",
+            "Documentation"
+        ],
+        "max_iterations": 5
+    }
+}
